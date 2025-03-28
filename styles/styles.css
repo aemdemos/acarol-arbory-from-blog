@@ -17,7 +17,7 @@
   --background-color: #272B36;
   --overlay-background-color: #272B36;
   --highlight-background-color: #232323;
-  --text-color: #FFFFFF;
+  --text-color: #FFF;
   
 
   /* fonts */
@@ -66,12 +66,27 @@
     --heading-font-size-xs: 22px;
   }
 }
+
 h1 {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-size: var(--heading-font-size-xxl);
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
 }
 
 h2 {
   color: #62a814;
+  font-size: var(--heading-font-size-xl);
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
 }
 
 body {
@@ -102,8 +117,6 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
@@ -132,6 +145,8 @@ code, samp {
 
 pre {
   overflow: scroll;
+  font-family: var(--fixed-font-family);
+  font-size: var(--body-font-size-s);
 }
 
 main pre {
@@ -270,73 +285,39 @@ main .section.highlight {
 
 /* inline code styles */
 code {
-  font-family: var(--code-font-family);
-  letter-spacing: -0.08px;
-  line-height: 1.8;
+  background-color: var(--code-bg-color);
+  padding: 0.125em 0.25em;
+  border-radius: 0.125em;
 }
 
 pre code {
-  font-size: 14px;
-  border: unset;
+  background-color: unset;
+  padding: 0;
+  border-radius: 0;
 }
 
 code:not(pre > code) {
-  font-size: 14px;
-  overflow-wrap: break-word;
-  border: 1px solid #e5e5e5;
   background-color: var(--code-bg-color);
-  color: var(--dark-spectrum-blue);
-  padding: 1px 4px;
-  border-radius: 4px;
+  padding: 0.125em 0.25em;
+  border-radius: 0.125em;
 }
 
 @media screen and (min-width: 600px) {
   pre code {
-    font-size: 16px;
+    font-size: var(--body-font-size-xs);
   }
-}
-
-pre {
-  width: 100%;
-  
 }
 
 main table pre {
   margin: 0;
-  padding: 0.5em;
+  padding: 0;
+  background-color: unset;
 }
 
 pre:not(:has(.hljs)) {
-  overflow-x: hidden;
-  background-color: #010700;
-
-}
-
-/* inline code styles */
-code {
-  font-family: var(--code-font-family);
-  letter-spacing: -0.08px;
-  line-height: 1.8;
-}
-
-pre code {
-  font-size: 14px;
-  color: #00a30b;
-  overflow: hidden;
-}
-
-code:not(pre > code) {
-  font-size: 14px;
-  overflow-wrap: break-word;
-  border: 1px solid #e5e5e5;
-  background-color: var(--code-bg-color);
-  color: var(--dark-spectrum-blue);
-  padding: 1px 4px;
-  border-radius: 4px;
-}
-
-@media screen and (min-width: 600px) {
-  pre code {
-    font-size: 16px;
-  }
+  background-color: var(--overlay-background-color);
+  padding: 1em;
+  border-radius: .25em;
+  overflow-x: auto;
+  white-space: pre;
 }

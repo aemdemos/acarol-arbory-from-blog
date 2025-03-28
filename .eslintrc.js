@@ -18,4 +18,5 @@ module.exports = {
       js: 'always',
     }],
   },
+  ignorePatterns: ['scripts/highlight.js'],
 };
