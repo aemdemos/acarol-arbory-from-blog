@@ -1,9 +1,11 @@
-# Your Project's Title...
-Your project's description...
+# acarol-arbory-from-blog
+
+This is a project created by AEMY.
 
 ## Environments
-- Preview: [https://main--arbory-tech-blog--arbory-digital-inc.hlx.page/](https://main--arbory-tech-blog--arbory-digital-inc.hlx.page/)
-- Live: [https://main--arbory-tech-blog--arbory-digital-inc.hlx.live/](https://main--arbory-tech-blog--arbory-digital-inc.hlx.live/)
+
+- Preview: https://main--acarol-arbory-from-blog--aemdemos.aem.page/
+- Live: https://main--acarol-arbory-from-blog--aemdemos.aem.live/
 
 ## Installation
 
@@ -19,8 +21,6 @@ npm run lint
 
 ## Local development
 
-1. Create a new repository based on the `helix-project-boilerplate` template and add a mountpoint in the `fstab.yaml`
-1. Add the [helix-bot](https://github.com/apps/helix-bot) to the repository
-1. Install the [Helix CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/helix-cli`
-1. Start Franklin Proxy: `hlx up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)
+1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
+1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000/`)
+1. Open the `acarol-arbory-from-blog` directory in your favorite IDE and start coding :)
