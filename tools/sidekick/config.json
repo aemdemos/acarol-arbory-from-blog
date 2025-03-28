@@ -1,0 +1,12 @@
+{
+  "project": "@adobe&#x2F;helix-project-boilerplate",
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": ["edit"],
+      "url": "/tools/sidekick/library.html",
+      "includePaths": ["**.docx**"]
+    }
+  ]
+}
